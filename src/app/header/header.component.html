@@ -1,0 +1,13 @@
+<header class="main-header">
+  <h1>Trabalho Final Angular - Movies List App</h1>
+
+  <div class="form-box">
+    <input [(ngModel)]="moviesFilter"
+      (ngModelChange)="onMoviesFilter($event)"
+      name="moviesFilter"
+      type="text"
+      placeholder="find movies...">
+
+    <app-filter-box></app-filter-box>
+  </div>
+</header>

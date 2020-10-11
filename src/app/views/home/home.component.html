@@ -1,0 +1,4 @@
+<app-progress-bar *ngIf="!carregou"></app-progress-bar>
+<app-header *ngIf="carregou" (filterMovies)="onMoviesFilter($event)"></app-header>
+<app-movies-list *ngIf="carregou" [movies]="moviesStore.movies$"></app-movies-list>
+<app-footer *ngIf="carregou"></app-footer>
